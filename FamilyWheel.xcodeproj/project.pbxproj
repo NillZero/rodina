@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5E6619F1AD59A160068392C /* tick.aiff in Resources */ = {isa = PBXBuildFile; fileRef = A5E6619E1AD59A160068392C /* tick.aiff */; };
+		A5E661A11AD5A0A30068392C /* click.wav in Resources */ = {isa = PBXBuildFile; fileRef = A5E661A01AD5A0A30068392C /* click.wav */; };
+		A5E661A41AD5A9750068392C /* ChildrenGame.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E661A31AD5A9750068392C /* ChildrenGame.m */; };
 		A5EB488D1AD2F318002BBCEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EB488C1AD2F318002BBCEE /* main.m */; };
 		A5EB48901AD2F318002BBCEE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EB488F1AD2F318002BBCEE /* AppDelegate.m */; };
 		A5EB48931AD2F318002BBCEE /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EB48921AD2F318002BBCEE /* GameScene.m */; };
@@ -16,6 +19,31 @@
 		A5EB489D1AD2F318002BBCEE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5EB489C1AD2F318002BBCEE /* Images.xcassets */; };
 		A5EB48A01AD2F318002BBCEE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5EB489E1AD2F318002BBCEE /* LaunchScreen.xib */; };
 		A5EB48AC1AD2F319002BBCEE /* FamilyWheelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EB48AB1AD2F319002BBCEE /* FamilyWheelTests.m */; };
+		A5EB48B61AD32388002BBCEE /* Blur.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A5EB48B51AD32388002BBCEE /* Blur.fsh */; };
+		C61E46341AD7DEC300CF4C70 /* Roleta-02.png in Resources */ = {isa = PBXBuildFile; fileRef = C61E46331AD7DEC300CF4C70 /* Roleta-02.png */; };
+		C61E463D1AD7E26A00CF4C70 /* Bariol_Bold_Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C61E46351AD7E01D00CF4C70 /* Bariol_Bold_Italic.otf */; };
+		C61E463E1AD7E26A00CF4C70 /* Bariol_Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C61E46361AD7E01D00CF4C70 /* Bariol_Bold.otf */; };
+		C61E463F1AD7E26A00CF4C70 /* Bariol_Light_Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C61E46371AD7E01D00CF4C70 /* Bariol_Light_Italic.otf */; };
+		C61E46401AD7E26A00CF4C70 /* Bariol_Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C61E46381AD7E01D00CF4C70 /* Bariol_Light.otf */; };
+		C61E46411AD7E26A00CF4C70 /* Bariol_Regular_Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C61E46391AD7E01D00CF4C70 /* Bariol_Regular_Italic.otf */; };
+		C61E46421AD7E26A00CF4C70 /* Bariol_Thin_Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C61E463A1AD7E01D00CF4C70 /* Bariol_Thin_Italic.otf */; };
+		C61E46431AD7E26A00CF4C70 /* Bariol_Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = C61E463B1AD7E01D00CF4C70 /* Bariol_Thin.otf */; };
+		C61E46541AD8289D00CF4C70 /* MemoriaScene.m in Sources */ = {isa = PBXBuildFile; fileRef = C61E46461AD8289D00CF4C70 /* MemoriaScene.m */; };
+		C61E46551AD8289D00CF4C70 /* MemoriaScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = C61E46471AD8289D00CF4C70 /* MemoriaScene.sks */; };
+		C61E46561AD8289D00CF4C70 /* som_cachorro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C61E46481AD8289D00CF4C70 /* som_cachorro.mp3 */; };
+		C61E46571AD8289D00CF4C70 /* som_coruja.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C61E46491AD8289D00CF4C70 /* som_coruja.mp3 */; };
+		C61E46581AD8289D00CF4C70 /* som_elefante.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C61E464A1AD8289D00CF4C70 /* som_elefante.mp3 */; };
+		C61E46591AD8289D00CF4C70 /* som_galinha.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C61E464B1AD8289D00CF4C70 /* som_galinha.mp3 */; };
+		C61E465A1AD8289D00CF4C70 /* som_gato.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C61E464C1AD8289D00CF4C70 /* som_gato.mp3 */; };
+		C61E465B1AD8289D00CF4C70 /* som_leoa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C61E464D1AD8289D00CF4C70 /* som_leoa.mp3 */; };
+		C61E465C1AD8289D00CF4C70 /* som_macaco.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C61E464E1AD8289D00CF4C70 /* som_macaco.mp3 */; };
+		C61E465D1AD8289D00CF4C70 /* som_ovelha.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C61E464F1AD8289D00CF4C70 /* som_ovelha.mp3 */; };
+		C61E465E1AD8289D00CF4C70 /* som_pato.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C61E46501AD8289D00CF4C70 /* som_pato.mp3 */; };
+		C61E465F1AD8289D00CF4C70 /* som_pinto.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C61E46511AD8289D00CF4C70 /* som_pinto.mp3 */; };
+		C61E46601AD8289D00CF4C70 /* som_porco.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C61E46521AD8289D00CF4C70 /* som_porco.mp3 */; };
+		C61E46611AD8289D00CF4C70 /* som_vaca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C61E46531AD8289D00CF4C70 /* som_vaca.mp3 */; };
+		C61E46631AD828AC00CF4C70 /* Memoria.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C61E46621AD828AC00CF4C70 /* Memoria.xcassets */; };
+		C61E46661AD828DD00CF4C70 /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = C61E46651AD828DD00CF4C70 /* Animal.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +57,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A5E6619E1AD59A160068392C /* tick.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = tick.aiff; sourceTree = "<group>"; };
+		A5E661A01AD5A0A30068392C /* click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = click.wav; sourceTree = "<group>"; };
+		A5E661A21AD5A9750068392C /* ChildrenGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildrenGame.h; sourceTree = "<group>"; };
+		A5E661A31AD5A9750068392C /* ChildrenGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildrenGame.m; sourceTree = "<group>"; };
 		A5EB48871AD2F318002BBCEE /* FamilyWheel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FamilyWheel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5EB488B1AD2F318002BBCEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5EB488C1AD2F318002BBCEE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -45,6 +77,33 @@
 		A5EB48A51AD2F319002BBCEE /* FamilyWheelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FamilyWheelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5EB48AA1AD2F319002BBCEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5EB48AB1AD2F319002BBCEE /* FamilyWheelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FamilyWheelTests.m; sourceTree = "<group>"; };
+		A5EB48B51AD32388002BBCEE /* Blur.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Blur.fsh; sourceTree = "<group>"; };
+		C61E46331AD7DEC300CF4C70 /* Roleta-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Roleta-02.png"; sourceTree = "<group>"; };
+		C61E46351AD7E01D00CF4C70 /* Bariol_Bold_Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bariol_Bold_Italic.otf; sourceTree = "<group>"; };
+		C61E46361AD7E01D00CF4C70 /* Bariol_Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bariol_Bold.otf; sourceTree = "<group>"; };
+		C61E46371AD7E01D00CF4C70 /* Bariol_Light_Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bariol_Light_Italic.otf; sourceTree = "<group>"; };
+		C61E46381AD7E01D00CF4C70 /* Bariol_Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bariol_Light.otf; sourceTree = "<group>"; };
+		C61E46391AD7E01D00CF4C70 /* Bariol_Regular_Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bariol_Regular_Italic.otf; sourceTree = "<group>"; };
+		C61E463A1AD7E01D00CF4C70 /* Bariol_Thin_Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bariol_Thin_Italic.otf; sourceTree = "<group>"; };
+		C61E463B1AD7E01D00CF4C70 /* Bariol_Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bariol_Thin.otf; sourceTree = "<group>"; };
+		C61E46451AD8289D00CF4C70 /* MemoriaScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoriaScene.h; sourceTree = "<group>"; };
+		C61E46461AD8289D00CF4C70 /* MemoriaScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoriaScene.m; sourceTree = "<group>"; };
+		C61E46471AD8289D00CF4C70 /* MemoriaScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MemoriaScene.sks; sourceTree = "<group>"; };
+		C61E46481AD8289D00CF4C70 /* som_cachorro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = som_cachorro.mp3; sourceTree = "<group>"; };
+		C61E46491AD8289D00CF4C70 /* som_coruja.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = som_coruja.mp3; sourceTree = "<group>"; };
+		C61E464A1AD8289D00CF4C70 /* som_elefante.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = som_elefante.mp3; sourceTree = "<group>"; };
+		C61E464B1AD8289D00CF4C70 /* som_galinha.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = som_galinha.mp3; sourceTree = "<group>"; };
+		C61E464C1AD8289D00CF4C70 /* som_gato.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = som_gato.mp3; sourceTree = "<group>"; };
+		C61E464D1AD8289D00CF4C70 /* som_leoa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = som_leoa.mp3; sourceTree = "<group>"; };
+		C61E464E1AD8289D00CF4C70 /* som_macaco.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = som_macaco.mp3; sourceTree = "<group>"; };
+		C61E464F1AD8289D00CF4C70 /* som_ovelha.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = som_ovelha.mp3; sourceTree = "<group>"; };
+		C61E46501AD8289D00CF4C70 /* som_pato.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = som_pato.mp3; sourceTree = "<group>"; };
+		C61E46511AD8289D00CF4C70 /* som_pinto.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = som_pinto.mp3; sourceTree = "<group>"; };
+		C61E46521AD8289D00CF4C70 /* som_porco.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = som_porco.mp3; sourceTree = "<group>"; };
+		C61E46531AD8289D00CF4C70 /* som_vaca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = som_vaca.mp3; sourceTree = "<group>"; };
+		C61E46621AD828AC00CF4C70 /* Memoria.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Memoria.xcassets; sourceTree = "<group>"; };
+		C61E46641AD828DD00CF4C70 /* Animal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
+		C61E46651AD828DD00CF4C70 /* Animal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,9 +152,16 @@
 				A5EB48941AD2F318002BBCEE /* GameScene.sks */,
 				A5EB48961AD2F318002BBCEE /* GameViewController.h */,
 				A5EB48971AD2F318002BBCEE /* GameViewController.m */,
+				A5E661A21AD5A9750068392C /* ChildrenGame.h */,
+				A5E661A31AD5A9750068392C /* ChildrenGame.m */,
 				A5EB48991AD2F318002BBCEE /* Main.storyboard */,
+				C61E46331AD7DEC300CF4C70 /* Roleta-02.png */,
 				A5EB489C1AD2F318002BBCEE /* Images.xcassets */,
 				A5EB489E1AD2F318002BBCEE /* LaunchScreen.xib */,
+				A5EB48B51AD32388002BBCEE /* Blur.fsh */,
+				A5E6619E1AD59A160068392C /* tick.aiff */,
+				A5E661A01AD5A0A30068392C /* click.wav */,
+				C61E46441AD827FE00CF4C70 /* Games */,
 				A5EB488A1AD2F318002BBCEE /* Supporting Files */,
 			);
 			path = FamilyWheel;
@@ -104,6 +170,7 @@
 		A5EB488A1AD2F318002BBCEE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C61E463C1AD7E24900CF4C70 /* Fonts */,
 				A5EB488B1AD2F318002BBCEE /* Info.plist */,
 				A5EB488C1AD2F318002BBCEE /* main.m */,
 			);
@@ -125,6 +192,45 @@
 				A5EB48AA1AD2F319002BBCEE /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C61E463C1AD7E24900CF4C70 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C61E46351AD7E01D00CF4C70 /* Bariol_Bold_Italic.otf */,
+				C61E46361AD7E01D00CF4C70 /* Bariol_Bold.otf */,
+				C61E46371AD7E01D00CF4C70 /* Bariol_Light_Italic.otf */,
+				C61E46381AD7E01D00CF4C70 /* Bariol_Light.otf */,
+				C61E46391AD7E01D00CF4C70 /* Bariol_Regular_Italic.otf */,
+				C61E463A1AD7E01D00CF4C70 /* Bariol_Thin_Italic.otf */,
+				C61E463B1AD7E01D00CF4C70 /* Bariol_Thin.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		C61E46441AD827FE00CF4C70 /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				C61E46641AD828DD00CF4C70 /* Animal.h */,
+				C61E46651AD828DD00CF4C70 /* Animal.m */,
+				C61E46621AD828AC00CF4C70 /* Memoria.xcassets */,
+				C61E46451AD8289D00CF4C70 /* MemoriaScene.h */,
+				C61E46461AD8289D00CF4C70 /* MemoriaScene.m */,
+				C61E46471AD8289D00CF4C70 /* MemoriaScene.sks */,
+				C61E46481AD8289D00CF4C70 /* som_cachorro.mp3 */,
+				C61E46491AD8289D00CF4C70 /* som_coruja.mp3 */,
+				C61E464A1AD8289D00CF4C70 /* som_elefante.mp3 */,
+				C61E464B1AD8289D00CF4C70 /* som_galinha.mp3 */,
+				C61E464C1AD8289D00CF4C70 /* som_gato.mp3 */,
+				C61E464D1AD8289D00CF4C70 /* som_leoa.mp3 */,
+				C61E464E1AD8289D00CF4C70 /* som_macaco.mp3 */,
+				C61E464F1AD8289D00CF4C70 /* som_ovelha.mp3 */,
+				C61E46501AD8289D00CF4C70 /* som_pato.mp3 */,
+				C61E46511AD8289D00CF4C70 /* som_pinto.mp3 */,
+				C61E46521AD8289D00CF4C70 /* som_porco.mp3 */,
+				C61E46531AD8289D00CF4C70 /* som_vaca.mp3 */,
+			);
+			name = Games;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +282,7 @@
 				TargetAttributes = {
 					A5EB48861AD2F318002BBCEE = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = ZJ6DEZHYRU;
 					};
 					A5EB48A41AD2F319002BBCEE = {
 						CreatedOnToolsVersion = 6.2;
@@ -208,9 +315,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5EB48A01AD2F318002BBCEE /* LaunchScreen.xib in Resources */,
+				C61E465D1AD8289D00CF4C70 /* som_ovelha.mp3 in Resources */,
+				A5E661A11AD5A0A30068392C /* click.wav in Resources */,
 				A5EB489D1AD2F318002BBCEE /* Images.xcassets in Resources */,
+				C61E46401AD7E26A00CF4C70 /* Bariol_Light.otf in Resources */,
+				C61E46631AD828AC00CF4C70 /* Memoria.xcassets in Resources */,
+				C61E46581AD8289D00CF4C70 /* som_elefante.mp3 in Resources */,
+				C61E465C1AD8289D00CF4C70 /* som_macaco.mp3 in Resources */,
+				C61E463F1AD7E26A00CF4C70 /* Bariol_Light_Italic.otf in Resources */,
+				A5E6619F1AD59A160068392C /* tick.aiff in Resources */,
 				A5EB48951AD2F318002BBCEE /* GameScene.sks in Resources */,
+				C61E465E1AD8289D00CF4C70 /* som_pato.mp3 in Resources */,
+				C61E465F1AD8289D00CF4C70 /* som_pinto.mp3 in Resources */,
+				C61E46601AD8289D00CF4C70 /* som_porco.mp3 in Resources */,
+				C61E46551AD8289D00CF4C70 /* MemoriaScene.sks in Resources */,
+				C61E463D1AD7E26A00CF4C70 /* Bariol_Bold_Italic.otf in Resources */,
 				A5EB489B1AD2F318002BBCEE /* Main.storyboard in Resources */,
+				C61E465B1AD8289D00CF4C70 /* som_leoa.mp3 in Resources */,
+				C61E46341AD7DEC300CF4C70 /* Roleta-02.png in Resources */,
+				C61E465A1AD8289D00CF4C70 /* som_gato.mp3 in Resources */,
+				C61E46611AD8289D00CF4C70 /* som_vaca.mp3 in Resources */,
+				C61E46431AD7E26A00CF4C70 /* Bariol_Thin.otf in Resources */,
+				C61E46571AD8289D00CF4C70 /* som_coruja.mp3 in Resources */,
+				A5EB48B61AD32388002BBCEE /* Blur.fsh in Resources */,
+				C61E46591AD8289D00CF4C70 /* som_galinha.mp3 in Resources */,
+				C61E46421AD7E26A00CF4C70 /* Bariol_Thin_Italic.otf in Resources */,
+				C61E46561AD8289D00CF4C70 /* som_cachorro.mp3 in Resources */,
+				C61E46411AD7E26A00CF4C70 /* Bariol_Regular_Italic.otf in Resources */,
+				C61E463E1AD7E26A00CF4C70 /* Bariol_Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +362,9 @@
 			files = (
 				A5EB48981AD2F318002BBCEE /* GameViewController.m in Sources */,
 				A5EB48901AD2F318002BBCEE /* AppDelegate.m in Sources */,
+				A5E661A41AD5A9750068392C /* ChildrenGame.m in Sources */,
+				C61E46541AD8289D00CF4C70 /* MemoriaScene.m in Sources */,
+				C61E46661AD828DD00CF4C70 /* Animal.m in Sources */,
 				A5EB48931AD2F318002BBCEE /* GameScene.m in Sources */,
 				A5EB488D1AD2F318002BBCEE /* main.m in Sources */,
 			);
@@ -424,6 +559,7 @@
 				A5EB48B11AD2F319002BBCEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5EB48B21AD2F319002BBCEE /* Build configuration list for PBXNativeTarget "FamilyWheelTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +568,7 @@
 				A5EB48B41AD2F319002BBCEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
