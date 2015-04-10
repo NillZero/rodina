@@ -11,7 +11,7 @@
 @implementation Animal
 
 static NSArray *animais;
-static NSArray *listaDeAnimais;
+static NSMutableArray *listaDeAnimais;
 
 + (void)initialize
 {
@@ -54,10 +54,19 @@ static NSArray *listaDeAnimais;
             [lista exchangeObjectAtIndex:i withObjectAtIndex:exchangeIndex];
         }
         
-        listaDeAnimais = [NSArray arrayWithArray:lista];
+        listaDeAnimais = [NSMutableArray arrayWithArray:lista];
     }
     
     return listaDeAnimais;
+}
+
++(void)randomizeAnimalsOrder {
+    NSUInteger count = [listaDeAnimais count];
+    for (NSUInteger i = 0; i < count; ++i) {
+        NSInteger remainingCount = count - i;
+        NSInteger exchangeIndex = i + arc4random_uniform((u_int32_t )remainingCount);
+        [listaDeAnimais exchangeObjectAtIndex:i withObjectAtIndex:exchangeIndex];
+    }
 }
 
 -(NSString *)getNomeImagem {

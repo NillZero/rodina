@@ -2,16 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIAppFonts</key>
-	<array>
-		<string>Bariol_Thin.otf</string>
-		<string>Bariol_Thin_Italic.otf</string>
-		<string>Bariol_Regular_Italic.otf</string>
-		<string>Bariol_Light.otf</string>
-		<string>Bariol_Light_Italic.otf</string>
-		<string>Bariol_Bold.otf</string>
-		<string>Bariol_Bold_Italic.otf</string>
-	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -32,6 +22,17 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Bariol_Regular.otf</string>
+		<string>Bariol_Thin.otf</string>
+		<string>Bariol_Thin_Italic.otf</string>
+		<string>Bariol_Regular_Italic.otf</string>
+		<string>Bariol_Light.otf</string>
+		<string>Bariol_Light_Italic.otf</string>
+		<string>Bariol_Bold.otf</string>
+		<string>Bariol_Bold_Italic.otf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

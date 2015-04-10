@@ -1,10 +1,30 @@
 #import "MemoriaScene.h"
 #import "Animal.h"
+#import "GameScene.h"
 
 @interface MemoriaScene ()
 
 @property (nonatomic, strong) SKSpriteNode *selectedNode;
 @property (nonatomic) SKSpriteNode *firstCard;
+
+@end
+
+@implementation SKScene (Unarchive)
+
++ (instancetype)unarchiveFromFile:(NSString *)file {
+    /* Retrieve scene file path from the application bundle */
+    NSString *nodePath = [[NSBundle mainBundle] pathForResource:file ofType:@"sks"];
+    /* Unarchive the file to an SKScene object */
+    NSData *data = [NSData dataWithContentsOfFile:nodePath
+                                          options:NSDataReadingMappedIfSafe
+                                            error:nil];
+    NSKeyedUnarchiver *arch = [[NSKeyedUnarchiver alloc] initForReadingWithData:data];
+    [arch setClass:self forClassName:@"SKScene"];
+    SKScene *scene = [arch decodeObjectForKey:NSKeyedArchiveRootObjectKey];
+    [arch finishDecoding];
+    
+    return scene;
+}
 
 @end
 
@@ -51,6 +71,14 @@ Animal *secondAnimal;
 - (void)selectNodeForTouch:(CGPoint)touchLocation {
     //1
     SKSpriteNode *touchedNode = (SKSpriteNode *)[self nodeAtPoint:touchLocation];
+    
+    if (touchedNode.name != nil && [touchedNode.name isEqualToString:@"Voltar"]) {
+        GameScene *scene = [GameScene unarchiveFromFile:@"GameScene"];
+        scene.scaleMode = SKSceneScaleModeAspectFit;
+        
+        // Present the scene.
+        [self.view presentScene:scene];
+    }
     
     //2
     if(![touchedNode isEqual:self.firstCard]) {
@@ -112,7 +140,7 @@ Animal *secondAnimal;
                     scores[currentPlayerIndex] ++;
                     NSLog(@"%d x %d", scores[0], scores[1]);
                     SKLabelNode *scoreToChange = (SKLabelNode *)[self childNodeWithName:[NSString stringWithFormat: @"Score%d", currentPlayerIndex + 1]];
-                    scoreToChange.text = [NSString stringWithFormat:@"%d", scores[currentPlayerIndex] ];
+                    scoreToChange.text = [NSString stringWithFormat:@"%d Pontos", scores[currentPlayerIndex] ];
                 } else {
                     [self.firstCard setTexture:[SKTexture textureWithImageNamed:@"Costas"]];
                     [_selectedNode setTexture:[SKTexture textureWithImageNamed:@"Costas"]];

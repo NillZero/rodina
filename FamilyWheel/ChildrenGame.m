@@ -24,7 +24,7 @@ static NSMutableArray *gamesList;
                     //case 1:
                         game.name = [NSString stringWithFormat:@"BRINCADEIRA %d", i];
                         game.instructions = [NSString stringWithFormat:@"Brinque de %d em família.", i];
-                        game.imageName = [NSString stringWithFormat:@"Abraco_%@", i%2 == 1?@"Bege":@"Vermelho"];
+                        game.imageName = [NSString stringWithFormat:@"Abraco_"];
                         game.pointsEarned = i*10;
                         game.secondsOfPlay = i*2;
                 //        break;

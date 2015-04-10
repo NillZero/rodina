@@ -44,6 +44,7 @@
 		C61E46611AD8289D00CF4C70 /* som_vaca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C61E46531AD8289D00CF4C70 /* som_vaca.mp3 */; };
 		C61E46631AD828AC00CF4C70 /* Memoria.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C61E46621AD828AC00CF4C70 /* Memoria.xcassets */; };
 		C61E46661AD828DD00CF4C70 /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = C61E46651AD828DD00CF4C70 /* Animal.m */; };
+		EEE2BCBD1AD8403B0023CF41 /* Bariol_Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EEE2BCBC1AD840110023CF41 /* Bariol_Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +62,7 @@
 		A5E661A01AD5A0A30068392C /* click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = click.wav; sourceTree = "<group>"; };
 		A5E661A21AD5A9750068392C /* ChildrenGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildrenGame.h; sourceTree = "<group>"; };
 		A5E661A31AD5A9750068392C /* ChildrenGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildrenGame.m; sourceTree = "<group>"; };
-		A5EB48871AD2F318002BBCEE /* FamilyWheel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FamilyWheel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5EB48871AD2F318002BBCEE /* Rodina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rodina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5EB488B1AD2F318002BBCEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5EB488C1AD2F318002BBCEE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A5EB488E1AD2F318002BBCEE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -74,7 +75,7 @@
 		A5EB489A1AD2F318002BBCEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5EB489C1AD2F318002BBCEE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A5EB489F1AD2F318002BBCEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		A5EB48A51AD2F319002BBCEE /* FamilyWheelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FamilyWheelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5EB48A51AD2F319002BBCEE /* RodinaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RodinaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5EB48AA1AD2F319002BBCEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5EB48AB1AD2F319002BBCEE /* FamilyWheelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FamilyWheelTests.m; sourceTree = "<group>"; };
 		A5EB48B51AD32388002BBCEE /* Blur.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Blur.fsh; sourceTree = "<group>"; };
@@ -104,6 +105,7 @@
 		C61E46621AD828AC00CF4C70 /* Memoria.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Memoria.xcassets; sourceTree = "<group>"; };
 		C61E46641AD828DD00CF4C70 /* Animal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
 		C61E46651AD828DD00CF4C70 /* Animal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
+		EEE2BCBC1AD840110023CF41 /* Bariol_Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bariol_Regular.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,8 +138,8 @@
 		A5EB48881AD2F318002BBCEE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A5EB48871AD2F318002BBCEE /* FamilyWheel.app */,
-				A5EB48A51AD2F319002BBCEE /* FamilyWheelTests.xctest */,
+				A5EB48871AD2F318002BBCEE /* Rodina.app */,
+				A5EB48A51AD2F319002BBCEE /* RodinaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -197,6 +199,7 @@
 		C61E463C1AD7E24900CF4C70 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				EEE2BCBC1AD840110023CF41 /* Bariol_Regular.otf */,
 				C61E46351AD7E01D00CF4C70 /* Bariol_Bold_Italic.otf */,
 				C61E46361AD7E01D00CF4C70 /* Bariol_Bold.otf */,
 				C61E46371AD7E01D00CF4C70 /* Bariol_Light_Italic.otf */,
@@ -236,9 +239,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A5EB48861AD2F318002BBCEE /* FamilyWheel */ = {
+		A5EB48861AD2F318002BBCEE /* Rodina */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A5EB48AF1AD2F319002BBCEE /* Build configuration list for PBXNativeTarget "FamilyWheel" */;
+			buildConfigurationList = A5EB48AF1AD2F319002BBCEE /* Build configuration list for PBXNativeTarget "Rodina" */;
 			buildPhases = (
 				A5EB48831AD2F318002BBCEE /* Sources */,
 				A5EB48841AD2F318002BBCEE /* Frameworks */,
@@ -248,14 +251,14 @@
 			);
 			dependencies = (
 			);
-			name = FamilyWheel;
+			name = Rodina;
 			productName = FamilyWheel;
-			productReference = A5EB48871AD2F318002BBCEE /* FamilyWheel.app */;
+			productReference = A5EB48871AD2F318002BBCEE /* Rodina.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A5EB48A41AD2F319002BBCEE /* FamilyWheelTests */ = {
+		A5EB48A41AD2F319002BBCEE /* RodinaTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A5EB48B21AD2F319002BBCEE /* Build configuration list for PBXNativeTarget "FamilyWheelTests" */;
+			buildConfigurationList = A5EB48B21AD2F319002BBCEE /* Build configuration list for PBXNativeTarget "RodinaTests" */;
 			buildPhases = (
 				A5EB48A11AD2F319002BBCEE /* Sources */,
 				A5EB48A21AD2F319002BBCEE /* Frameworks */,
@@ -266,9 +269,9 @@
 			dependencies = (
 				A5EB48A71AD2F319002BBCEE /* PBXTargetDependency */,
 			);
-			name = FamilyWheelTests;
+			name = RodinaTests;
 			productName = FamilyWheelTests;
-			productReference = A5EB48A51AD2F319002BBCEE /* FamilyWheelTests.xctest */;
+			productReference = A5EB48A51AD2F319002BBCEE /* RodinaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -282,7 +285,7 @@
 				TargetAttributes = {
 					A5EB48861AD2F318002BBCEE = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = ZJ6DEZHYRU;
+						DevelopmentTeam = FH5CMKBGNN;
 					};
 					A5EB48A41AD2F319002BBCEE = {
 						CreatedOnToolsVersion = 6.2;
@@ -290,7 +293,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A5EB48821AD2F318002BBCEE /* Build configuration list for PBXProject "FamilyWheel" */;
+			buildConfigurationList = A5EB48821AD2F318002BBCEE /* Build configuration list for PBXProject "Rodina" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -303,8 +306,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A5EB48861AD2F318002BBCEE /* FamilyWheel */,
-				A5EB48A41AD2F319002BBCEE /* FamilyWheelTests */,
+				A5EB48861AD2F318002BBCEE /* Rodina */,
+				A5EB48A41AD2F319002BBCEE /* RodinaTests */,
 			);
 		};
 /* End PBXProject section */
@@ -314,6 +317,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEE2BCBD1AD8403B0023CF41 /* Bariol_Regular.otf in Resources */,
 				A5EB48A01AD2F318002BBCEE /* LaunchScreen.xib in Resources */,
 				C61E465D1AD8289D00CF4C70 /* som_ovelha.mp3 in Resources */,
 				A5E661A11AD5A0A30068392C /* click.wav in Resources */,
@@ -383,7 +387,7 @@
 /* Begin PBXTargetDependency section */
 		A5EB48A71AD2F319002BBCEE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A5EB48861AD2F318002BBCEE /* FamilyWheel */;
+			target = A5EB48861AD2F318002BBCEE /* Rodina */;
 			targetProxy = A5EB48A61AD2F319002BBCEE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -490,9 +494,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FamilyWheel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Rodina;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -500,9 +506,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FamilyWheel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Rodina;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -520,8 +528,8 @@
 				);
 				INFOPLIST_FILE = FamilyWheelTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FamilyWheel.app/FamilyWheel";
+				PRODUCT_NAME = RodinaTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rodina.app/Rodina";
 			};
 			name = Debug;
 		};
@@ -535,15 +543,15 @@
 				);
 				INFOPLIST_FILE = FamilyWheelTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FamilyWheel.app/FamilyWheel";
+				PRODUCT_NAME = RodinaTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rodina.app/Rodina";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A5EB48821AD2F318002BBCEE /* Build configuration list for PBXProject "FamilyWheel" */ = {
+		A5EB48821AD2F318002BBCEE /* Build configuration list for PBXProject "Rodina" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A5EB48AD1AD2F319002BBCEE /* Debug */,
@@ -552,7 +560,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A5EB48AF1AD2F319002BBCEE /* Build configuration list for PBXNativeTarget "FamilyWheel" */ = {
+		A5EB48AF1AD2F319002BBCEE /* Build configuration list for PBXNativeTarget "Rodina" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A5EB48B01AD2F319002BBCEE /* Debug */,
@@ -561,7 +569,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A5EB48B21AD2F319002BBCEE /* Build configuration list for PBXNativeTarget "FamilyWheelTests" */ = {
+		A5EB48B21AD2F319002BBCEE /* Build configuration list for PBXNativeTarget "RodinaTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A5EB48B31AD2F319002BBCEE /* Debug */,

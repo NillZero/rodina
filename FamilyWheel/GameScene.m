@@ -85,13 +85,13 @@ SKNode *popup;
         [wheel addChild:position];
         
         //Criar sprite com a imagem da brincadeira
-        SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:game.imageName];
+        SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:[NSString stringWithFormat:@"%@%@", game.imageName, (i%2 == 1?@"Bege":@"Vermelho")]];
         sprite.zPosition = 2;
         sprite.size = CGSizeMake(120, 120);
         [position addChild:sprite];
         
         //Criar label com o nome da brincadeira
-        SKLabelNode *nameLabel = [SKLabelNode labelNodeWithFontNamed:@"Bariol-Light"];
+        SKLabelNode *nameLabel = [SKLabelNode labelNodeWithFontNamed:@"Bariol-Regular"];
         nameLabel.text = game.name;
         nameLabel.fontSize = 36;
         nameLabel.fontColor = (i%2 == 1?bege:vermelho);
@@ -99,7 +99,7 @@ SKNode *popup;
         [position addChild:nameLabel];
         
         //Criar label com a pontuacao da brincadeira
-        SKLabelNode *pointsLabel = [SKLabelNode labelNodeWithFontNamed:@"Bariol-Light"];
+        SKLabelNode *pointsLabel = [SKLabelNode labelNodeWithFontNamed:@"Bariol-Regular"];
         pointsLabel.text = [NSString stringWithFormat:@"%ld★", (long)game.pointsEarned];
         pointsLabel.fontSize = 48;
         pointsLabel.fontColor = (i%2 == 1?bege:vermelho);
