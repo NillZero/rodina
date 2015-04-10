@@ -41,7 +41,7 @@ Animal *firstAnimal;
 Animal *secondAnimal;
 
 -(void)didMoveToView:(SKView *)view {
- 
+    
     
     NSMutableArray *animais = [Animal getListaAnimais];
     for (Animal *animal in animais) {
@@ -70,50 +70,54 @@ Animal *secondAnimal;
 
 - (void)selectNodeForTouch:(CGPoint)touchLocation {
     //1
-    SKSpriteNode *touchedNode = (SKSpriteNode *)[self nodeAtPoint:touchLocation];
-    
-    if (touchedNode.name != nil && [touchedNode.name isEqualToString:@"Voltar"]) {
-        GameScene *scene = [GameScene unarchiveFromFile:@"GameScene"];
-        scene.scaleMode = SKSceneScaleModeAspectFit;
+    for (SKSpriteNode *touchedNode in [self nodesAtPoint:touchLocation]) {
         
-        // Present the scene.
-        [self.view presentScene:scene];
-    }
-    
-    //2
-    if(![touchedNode isEqual:self.firstCard]) {
-        [_selectedNode removeAllActions];
-        [_selectedNode runAction:[SKAction rotateToAngle:0.0f duration:0.1]];
-        
-        NSMutableArray *animais = [Animal getListaAnimais];
-        
-        if (isWaiting) {
-            return;
+        if (touchedNode.name != nil && !touchedNode.hidden) {
+            if ([touchedNode.name isEqualToString:@"Voltar"]) {
+                [Animal randomizeAnimalsOrder];
+                GameScene *scene = [GameScene unarchiveFromFile:@"GameScene"];
+                scene.scaleMode = SKSceneScaleModeAspectFit;
+                
+                // Present the scene.
+                [self.view presentScene:scene];
+            }
         }
         
-        NSLog(@"%@", touchedNode.name);
-        if ([[touchedNode.name substringToIndex:5] isEqualToString:@"Carta"]) {
-            //Selecionei uma carta
-            _selectedNode = touchedNode;
-            int clickedCardIndex = [[_selectedNode.name substringFromIndex:5] intValue];
-            Animal *animal = (Animal *)(animais[clickedCardIndex]);
-            [_selectedNode setTexture:[SKTexture textureWithImageNamed:[animal getNomeImagem]]];
+        //2
+        if(![touchedNode isEqual:self.firstCard]) {
+            [_selectedNode removeAllActions];
+            [_selectedNode runAction:[SKAction rotateToAngle:0.0f duration:0.1]];
             
-            if (firstCardIndex == -1) {
-                //Primeira jogada
-                firstCardIndex = clickedCardIndex;
-                self.firstCard = _selectedNode;
-                firstAnimal = animal;
-                [firstAnimal.som setCurrentTime:0];
-                [firstAnimal.som play];
-                [secondAnimal.som pause];
-            } else {
-                isWaiting = true;
-                timeStartedWaiting = 0;
-                secondAnimal = animal;
-                [firstAnimal.som pause];
-                [secondAnimal.som setCurrentTime:0];
-                [secondAnimal.som play];
+            NSMutableArray *animais = [Animal getListaAnimais];
+            
+            if (isWaiting) {
+                return;
+            }
+            
+            NSLog(@"%@", touchedNode.name);
+            if ([[touchedNode.name substringToIndex:5] isEqualToString:@"Carta"]) {
+                //Selecionei uma carta
+                _selectedNode = touchedNode;
+                int clickedCardIndex = [[_selectedNode.name substringFromIndex:5] intValue];
+                Animal *animal = (Animal *)(animais[clickedCardIndex]);
+                [_selectedNode setTexture:[SKTexture textureWithImageNamed:[animal getNomeImagem]]];
+                
+                if (firstCardIndex == -1) {
+                    //Primeira jogada
+                    firstCardIndex = clickedCardIndex;
+                    self.firstCard = _selectedNode;
+                    firstAnimal = animal;
+                    [firstAnimal.som setCurrentTime:0];
+                    [firstAnimal.som play];
+                    [secondAnimal.som pause];
+                } else {
+                    isWaiting = true;
+                    timeStartedWaiting = 0;
+                    secondAnimal = animal;
+                    [firstAnimal.som pause];
+                    [secondAnimal.som setCurrentTime:0];
+                    [secondAnimal.som play];
+                }
             }
         }
     }
@@ -166,10 +170,10 @@ Animal *secondAnimal;
             }
         }
     }
-//Penna, veja se esta correto isso, pois esquecemos de uma tela para final de game, conversei com a Polly e dei uma olhada na net, e achei dessa forma, acha que esta certo?!
-// SKTransition *doors = [SKTransition doorsOpenVerticalWithDuration:0.5];
-// SKScene *gameOverScene = [[gameOverScene alloc] initWithSize:[self.size ]];
-//     [self.view presentScene:gameoverScene transition: reveal];
+    //Penna, veja se esta correto isso, pois esquecemos de uma tela para final de game, conversei com a Polly e dei uma olhada na net, e achei dessa forma, acha que esta certo?!
+    // SKTransition *doors = [SKTransition doorsOpenVerticalWithDuration:0.5];
+    // SKScene *gameOverScene = [[gameOverScene alloc] initWithSize:[self.size ]];
+    //     [self.view presentScene:gameoverScene transition: reveal];
 }
 
 @end

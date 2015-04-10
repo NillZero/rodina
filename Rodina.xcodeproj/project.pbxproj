@@ -285,10 +285,11 @@
 				TargetAttributes = {
 					A5EB48861AD2F318002BBCEE = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = FH5CMKBGNN;
+						DevelopmentTeam = ZJ6DEZHYRU;
 					};
 					A5EB48A41AD2F319002BBCEE = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = ZJ6DEZHYRU;
 						TestTargetID = A5EB48861AD2F318002BBCEE;
 					};
 				};
@@ -498,7 +499,7 @@
 				INFOPLIST_FILE = FamilyWheel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = Rodina;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -510,7 +511,7 @@
 				INFOPLIST_FILE = FamilyWheel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = Rodina;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

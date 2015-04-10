@@ -11,5 +11,6 @@
 
 +(NSMutableArray *)getListaAnimais;
 -(NSString *)getNomeImagem;
++(void)randomizeAnimalsOrder;
 
 @end

@@ -15,6 +15,7 @@ BOOL hasTouched = false;
 @interface GameScene ()
 
 @property (nonatomic) SKAction *playTick;
+@property (nonatomic) SKAction *shakePin;
 
 @end
 
@@ -47,6 +48,14 @@ SKNode *popup;
 
 -(void)didMoveToView:(SKView *)view {
     
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if ([defaults valueForKey:@"Estrelas"] == nil) {
+        [defaults setValue:@"0" forKey:@"Estrelas"];
+    }
+    NSInteger points = [[defaults valueForKey:@"Estrelas"] integerValue];
+    SKLabelNode *estrelas = (SKLabelNode *)[self childNodeWithName:@"estrelas"];
+    [estrelas setText:[NSString stringWithFormat:@"%ld", points]];
+    
     hasTouched = false;
     
     //Primeiro SETUP : Esconder partes da hierarquia;
@@ -54,7 +63,7 @@ SKNode *popup;
     [self addChild:popup];
     for (SKNode *child in [self children]) {
         if (child.name.length > 5) {
-            if ([child.name compare:@"PopUp" options:NSCaseInsensitiveSearch range:NSMakeRange(0, 4)]) {
+            if ([[child.name substringToIndex:5] isEqualToString:@"PopUp"]) {
                 [child removeFromParent];
                 [popup addChild:child];
                 [child setHidden:YES];
@@ -65,6 +74,13 @@ SKNode *popup;
     [popup setHidden:YES];
     
     self.playTick = [SKAction playSoundFileNamed:@"click.wav" waitForCompletion:NO];
+    
+    SKAction *clockwise = [SKAction rotateByAngle:-M_PI_4/4 duration:0.1];
+    clockwise.timingMode = SKActionTimingEaseIn;
+    SKAction *counterClockwise = [SKAction rotateByAngle:M_PI_4/4 duration:0.1];
+    counterClockwise.timingMode = SKActionTimingEaseOut;
+    SKAction *seq = [SKAction sequence:@[clockwise, counterClockwise]];
+    self.shakePin = seq;
     
     wheel = (SKSpriteNode *)[self childNodeWithName:@"wheel"];
     [wheel.physicsBody applyAngularImpulse:10000];
@@ -139,6 +155,13 @@ SKNode *popup;
                     [self restartScene];
                 }
                 if ([touchedNode.name isEqualToString:@"PopUp_Time"] && [((SKLabelNode *)touchedNode).text isEqualToString:@"OK"]) {
+                    
+                    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+                    NSInteger points = [[defaults valueForKey:@"Estrelas"] integerValue];
+                    ChildrenGame *game = [ChildrenGame getGamesList][currentSpace];
+                    points += game.pointsEarned;
+                    [defaults setValue:[NSString stringWithFormat:@"%ld", points] forKey:@"Estrelas"];
+
                     [self restartScene];
                 }
                 if ([touchedNode.name isEqualToString:@"Game"]) {
@@ -159,7 +182,7 @@ SKNode *popup;
 {
     // Create and configure the scene.
     GameScene *scene = [GameScene unarchiveFromFile:@"GameScene"];
-    scene.scaleMode = SKSceneScaleModeAspectFill;
+    scene.scaleMode = SKSceneScaleModeAspectFit;
     
     // Present the scene.
     [self.view presentScene:scene];
@@ -178,6 +201,8 @@ SKNode *popup;
                 nextTickAngle = (nextTickAngle + 22.5);
                 if (nextTickAngle > 360) nextTickAngle -= 360;
                 [self runAction:self.playTick];
+                
+                [[self childNodeWithName:@"mark"] runAction:self.shakePin];
             }
         }
         
@@ -190,7 +215,7 @@ SKNode *popup;
             ChildrenGame *game = [ChildrenGame getGamesList][currentSpace];
             
             SKSpriteNode *image = (SKSpriteNode *)[popup childNodeWithName:@"PopUp_Image"];
-            [image setTexture:[SKTexture textureWithImageNamed:game.imageName]];
+            [image setTexture:[SKTexture textureWithImageNamed:[NSString stringWithFormat:@"%@%@", game.imageName, @"Vermelho"]]];
             
             SKLabelNode *points = (SKLabelNode *)[popup childNodeWithName:@"PopUp_Points"];
             [points setText:[NSString stringWithFormat:@"%ld★", (long)game.pointsEarned]];
@@ -205,8 +230,10 @@ SKNode *popup;
             for (SKNode *child in [popup children]) {
                 [child setHidden:NO];
             }
-            startCountdownTime = currentTime;
-        } else {
+            startCountdownTime = currentTime +1;
+            [popup setAlpha:0];
+            [popup runAction:[SKAction fadeInWithDuration:1]];
+            } else {
             ChildrenGame *game = [ChildrenGame getGamesList][currentSpace];
             SKLabelNode *time = (SKLabelNode *)[popup childNodeWithName:@"PopUp_Time"];
             long seconds = ((long)game.secondsOfPlay - (long)(currentTime - startCountdownTime));
