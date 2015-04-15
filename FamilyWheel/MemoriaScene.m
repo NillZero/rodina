@@ -36,12 +36,28 @@ float timeStartedWaiting = 0;
 
 int currentPlayerIndex = 0;
 int scores[2] = {0, 0};
+SKNode *popup;
+bool fimDeJogo = false;
 
 Animal *firstAnimal;
 Animal *secondAnimal;
 
 -(void)didMoveToView:(SKView *)view {
     
+    firstCardIndex = -1;
+    isWaiting = false;
+    timeStartedWaiting = 0;
+    
+    currentPlayerIndex = 0;
+    scores[0] = 0;
+    scores[1] = 0;
+    fimDeJogo = false;
+    
+    firstAnimal = nil;
+    secondAnimal = nil;
+    
+    popup = [self childNodeWithName:@"PopUp_Window"];
+    [popup setHidden:YES];
     
     NSMutableArray *animais = [Animal getListaAnimais];
     for (Animal *animal in animais) {
@@ -80,6 +96,12 @@ Animal *secondAnimal;
                 
                 // Present the scene.
                 [self.view presentScene:scene];
+            } else if ([touchedNode.name isEqualToString:@"Replay"]) {
+                if (fimDeJogo) {
+                    [Animal randomizeAnimalsOrder];
+                    MemoriaScene *scene = [MemoriaScene unarchiveFromFile:@"MemoriaScene"];
+                    scene.scaleMode = SKSceneScaleModeAspectFit;
+                }
             }
         }
         
@@ -145,6 +167,12 @@ Animal *secondAnimal;
                     NSLog(@"%d x %d", scores[0], scores[1]);
                     SKLabelNode *scoreToChange = (SKLabelNode *)[self childNodeWithName:[NSString stringWithFormat: @"Score%d", currentPlayerIndex + 1]];
                     scoreToChange.text = [NSString stringWithFormat:@"%d Pontos", scores[currentPlayerIndex] ];
+                    
+                    if (scores[0] + scores[1] == 12) {
+                        [popup setHidden:NO];
+                        fimDeJogo = true;
+                    }
+                    
                 } else {
                     [self.firstCard setTexture:[SKTexture textureWithImageNamed:@"Costas"]];
                     [_selectedNode setTexture:[SKTexture textureWithImageNamed:@"Costas"]];
@@ -170,10 +198,7 @@ Animal *secondAnimal;
             }
         }
     }
-    //Penna, veja se esta correto isso, pois esquecemos de uma tela para final de game, conversei com a Polly e dei uma olhada na net, e achei dessa forma, acha que esta certo?!
-    // SKTransition *doors = [SKTransition doorsOpenVerticalWithDuration:0.5];
-    // SKScene *gameOverScene = [[gameOverScene alloc] initWithSize:[self.size ]];
-    //     [self.view presentScene:gameoverScene transition: reveal];
+   
 }
 
 @end
