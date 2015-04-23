@@ -38,9 +38,12 @@ int currentPlayerIndex = 0;
 int scores[2] = {0, 0};
 SKNode *popup;
 bool fimDeJogo = false;
+bool comecouJogo = false;
 
 Animal *firstAnimal;
 Animal *secondAnimal;
+
+
 
 -(void)didMoveToView:(SKView *)view {
     
@@ -52,6 +55,7 @@ Animal *secondAnimal;
     scores[0] = 0;
     scores[1] = 0;
     fimDeJogo = false;
+    comecouJogo = false;
     
     firstAnimal = nil;
     secondAnimal = nil;
@@ -63,15 +67,6 @@ Animal *secondAnimal;
     for (Animal *animal in animais) {
         NSLog(@"%@", [animal getNomeImagem]);
     }
-    
-    SKLabelNode *currentPlayer = (SKLabelNode *)[self childNodeWithName:[NSString stringWithFormat: @"Jogador%d", currentPlayerIndex + 1]];
-    SKAction *grow = [SKAction scaleTo:1.1 duration:0.5];
-    grow.timingMode = SKActionTimingEaseInEaseOut;
-    SKAction *shrink = [SKAction scaleTo:0.9 duration:0.5];
-    grow.timingMode = SKActionTimingEaseInEaseOut;
-    SKAction *seq = [SKAction sequence:@[grow, shrink]];
-    
-    [currentPlayer runAction:[SKAction repeatActionForever:seq]];
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -101,49 +96,65 @@ Animal *secondAnimal;
                     [Animal randomizeAnimalsOrder];
                     MemoriaScene *scene = [MemoriaScene unarchiveFromFile:@"MemoriaScene"];
                     scene.scaleMode = SKSceneScaleModeAspectFit;
+                    
+                    // Present the scene.
+                    [self.view presentScene:scene];
                 }
-            }
+            } else if ([touchedNode.name isEqualToString:@"Botao"]){
+                comecouJogo = true;
+                [[self childNodeWithName:@"PopUp_Inicio"] setHidden:YES];
+                
+                SKLabelNode *currentPlayer = (SKLabelNode *)[self childNodeWithName:[NSString stringWithFormat: @"Jogador%d", currentPlayerIndex + 1]];
+                SKAction *grow = [SKAction scaleTo:1.1 duration:0.5];
+                grow.timingMode = SKActionTimingEaseInEaseOut;
+                SKAction *shrink = [SKAction scaleTo:0.9 duration:0.5];
+                grow.timingMode = SKActionTimingEaseInEaseOut;
+                SKAction *seq = [SKAction sequence:@[grow, shrink]];
+                
+                [currentPlayer runAction:[SKAction repeatActionForever:seq]];
+           }
         }
         
         //2
-        if(![touchedNode isEqual:self.firstCard]) {
-            [_selectedNode removeAllActions];
-            [_selectedNode runAction:[SKAction rotateToAngle:0.0f duration:0.1]];
-            
-            NSMutableArray *animais = [Animal getListaAnimais];
-            
-            if (isWaiting) {
-                return;
-            }
-            
-            NSLog(@"%@", touchedNode.name);
-            if ([[touchedNode.name substringToIndex:5] isEqualToString:@"Carta"]) {
-                //Selecionei uma carta
-                _selectedNode = touchedNode;
-                int clickedCardIndex = [[_selectedNode.name substringFromIndex:5] intValue];
-                Animal *animal = (Animal *)(animais[clickedCardIndex]);
-                [_selectedNode setTexture:[SKTexture textureWithImageNamed:[animal getNomeImagem]]];
+        if (comecouJogo) {
+            if(![touchedNode isEqual:self.firstCard]) {
+                [_selectedNode removeAllActions];
+                [_selectedNode runAction:[SKAction rotateToAngle:0.0f duration:0.1]];
                 
-                if (firstCardIndex == -1) {
-                    //Primeira jogada
-                    firstCardIndex = clickedCardIndex;
-                    self.firstCard = _selectedNode;
-                    firstAnimal = animal;
-                    [firstAnimal.som setCurrentTime:0];
-                    [firstAnimal.som play];
-                    [secondAnimal.som pause];
-                } else {
-                    isWaiting = true;
-                    timeStartedWaiting = 0;
-                    secondAnimal = animal;
-                    [firstAnimal.som pause];
-                    [secondAnimal.som setCurrentTime:0];
-                    [secondAnimal.som play];
+                NSMutableArray *animais = [Animal getListaAnimais];
+                
+                if (isWaiting) {
+                    return;
+                }
+                
+                //NSLog(@"%@", touchedNode.name);
+                if ([[touchedNode.name substringToIndex:5] isEqualToString:@"Carta"]) {
+                    //Selecionei uma carta
+                    _selectedNode = touchedNode;
+                    int clickedCardIndex = [[_selectedNode.name substringFromIndex:5] intValue];
+                    Animal *animal = (Animal *)(animais[clickedCardIndex]);
+                    [_selectedNode setTexture:[SKTexture textureWithImageNamed:[animal getNomeImagem]]];
+                    
+                    if (firstCardIndex == -1) {
+                        //Primeira jogada
+                        firstCardIndex = clickedCardIndex;
+                        self.firstCard = _selectedNode;
+                        firstAnimal = animal;
+                        [firstAnimal.som setCurrentTime:0];
+                        [secondAnimal.som pause];
+                        [firstAnimal.som play];
+                    } else {
+                        isWaiting = true;
+                        timeStartedWaiting = 0;
+                        secondAnimal = animal;
+                        [firstAnimal.som pause];
+                        [secondAnimal.som setCurrentTime:0];
+                        [secondAnimal.som play];
+                    }
                 }
             }
         }
     }
-    
 }
 
 -(void)update:(CFTimeInterval)currentTime {
@@ -166,9 +177,20 @@ Animal *secondAnimal;
                     scores[currentPlayerIndex] ++;
                     NSLog(@"%d x %d", scores[0], scores[1]);
                     SKLabelNode *scoreToChange = (SKLabelNode *)[self childNodeWithName:[NSString stringWithFormat: @"Score%d", currentPlayerIndex + 1]];
-                    scoreToChange.text = [NSString stringWithFormat:@"%d Pontos", scores[currentPlayerIndex] ];
+                    scoreToChange.text = [NSString stringWithFormat:@"%d PONTO%@", scores[currentPlayerIndex], scores[currentPlayerIndex] == 1?@"":@"S" ];
                     
                     if (scores[0] + scores[1] == 12) {
+                        if (scores[0] > scores[1]) {
+                            [(SKLabelNode *)[popup childNodeWithName:@"PopUp_Jogador"] setText: @"JOGADOR 1"];
+                        }
+                        else if (scores[0] < scores[1]){
+                            [(SKLabelNode *)[popup childNodeWithName:@"PopUp_Jogador"] setText: @"JOGADOR 2"];
+                        }
+                        else {
+                            [(SKLabelNode *)[popup childNodeWithName:@"PopUp_Jogador"] setText: @""];
+                            [(SKLabelNode *)[popup childNodeWithName:@"PopUp_Ganhou"] setText: @"EMPATE!"];
+                        }
+                        
                         [popup setHidden:NO];
                         fimDeJogo = true;
                     }
@@ -179,6 +201,8 @@ Animal *secondAnimal;
                     firstCardIndex = -1;
                     self.firstCard = nil;
                     isWaiting = false;
+                    firstAnimal = nil;
+                    secondAnimal = nil;
                     
                     SKLabelNode *lastPlayer = (SKLabelNode *)[self childNodeWithName:[NSString stringWithFormat: @"Jogador%d", currentPlayerIndex + 1]];
                     [lastPlayer setScale:1];
@@ -198,7 +222,8 @@ Animal *secondAnimal;
             }
         }
     }
-   
+    
+    
 }
 
 @end

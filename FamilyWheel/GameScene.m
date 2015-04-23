@@ -223,6 +223,9 @@ SKNode *popup;
             SKLabelNode *instructions = (SKLabelNode *)[popup childNodeWithName:@"PopUp_Instructions"];
             [instructions setText:game.instructions];
             
+            SKLabelNode *instructions2 = (SKLabelNode *)[popup childNodeWithName:@"PopUp_Instructions2"];
+            [instructions2 setText:game.instructions2];
+            
             SKLabelNode *time = (SKLabelNode *)[popup childNodeWithName:@"PopUp_Time"];
             [time setText:[NSString stringWithFormat:@"%ld", (long)game.secondsOfPlay]];
             

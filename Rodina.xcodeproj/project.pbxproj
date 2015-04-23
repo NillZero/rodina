@@ -18,7 +18,6 @@
 		A5EB489B1AD2F318002BBCEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5EB48991AD2F318002BBCEE /* Main.storyboard */; };
 		A5EB489D1AD2F318002BBCEE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5EB489C1AD2F318002BBCEE /* Images.xcassets */; };
 		A5EB48A01AD2F318002BBCEE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5EB489E1AD2F318002BBCEE /* LaunchScreen.xib */; };
-		A5EB48AC1AD2F319002BBCEE /* FamilyWheelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EB48AB1AD2F319002BBCEE /* FamilyWheelTests.m */; };
 		A5EB48B61AD32388002BBCEE /* Blur.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A5EB48B51AD32388002BBCEE /* Blur.fsh */; };
 		C61E46341AD7DEC300CF4C70 /* Roleta-02.png in Resources */ = {isa = PBXBuildFile; fileRef = C61E46331AD7DEC300CF4C70 /* Roleta-02.png */; };
 		C61E463D1AD7E26A00CF4C70 /* Bariol_Bold_Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C61E46351AD7E01D00CF4C70 /* Bariol_Bold_Italic.otf */; };
@@ -28,7 +27,6 @@
 		C61E46411AD7E26A00CF4C70 /* Bariol_Regular_Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C61E46391AD7E01D00CF4C70 /* Bariol_Regular_Italic.otf */; };
 		C61E46421AD7E26A00CF4C70 /* Bariol_Thin_Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C61E463A1AD7E01D00CF4C70 /* Bariol_Thin_Italic.otf */; };
 		C61E46431AD7E26A00CF4C70 /* Bariol_Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = C61E463B1AD7E01D00CF4C70 /* Bariol_Thin.otf */; };
-		C61E46541AD8289D00CF4C70 /* MemoriaScene.m in Sources */ = {isa = PBXBuildFile; fileRef = C61E46461AD8289D00CF4C70 /* MemoriaScene.m */; };
 		C61E46551AD8289D00CF4C70 /* MemoriaScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = C61E46471AD8289D00CF4C70 /* MemoriaScene.sks */; };
 		C61E46561AD8289D00CF4C70 /* som_cachorro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C61E46481AD8289D00CF4C70 /* som_cachorro.mp3 */; };
 		C61E46571AD8289D00CF4C70 /* som_coruja.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C61E46491AD8289D00CF4C70 /* som_coruja.mp3 */; };
@@ -42,20 +40,11 @@
 		C61E465F1AD8289D00CF4C70 /* som_pinto.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C61E46511AD8289D00CF4C70 /* som_pinto.mp3 */; };
 		C61E46601AD8289D00CF4C70 /* som_porco.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C61E46521AD8289D00CF4C70 /* som_porco.mp3 */; };
 		C61E46611AD8289D00CF4C70 /* som_vaca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C61E46531AD8289D00CF4C70 /* som_vaca.mp3 */; };
-		C61E46631AD828AC00CF4C70 /* Memoria.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C61E46621AD828AC00CF4C70 /* Memoria.xcassets */; };
 		C61E46661AD828DD00CF4C70 /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = C61E46651AD828DD00CF4C70 /* Animal.m */; };
 		EEE2BCBD1AD8403B0023CF41 /* Bariol_Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EEE2BCBC1AD840110023CF41 /* Bariol_Regular.otf */; };
+		EEEDDB051AE0286B0051A273 /* MemoriaScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEDDB041AE0286B0051A273 /* MemoriaScene.m */; };
+		EEEDDB091AE03A730051A273 /* Memoria.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEEDDB081AE03A730051A273 /* Memoria.xcassets */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		A5EB48A61AD2F319002BBCEE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A5EB487F1AD2F318002BBCEE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A5EB48861AD2F318002BBCEE;
-			remoteInfo = FamilyWheel;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A5E6619E1AD59A160068392C /* tick.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = tick.aiff; sourceTree = "<group>"; };
@@ -75,7 +64,6 @@
 		A5EB489A1AD2F318002BBCEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5EB489C1AD2F318002BBCEE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A5EB489F1AD2F318002BBCEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		A5EB48A51AD2F319002BBCEE /* RodinaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RodinaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5EB48AA1AD2F319002BBCEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5EB48AB1AD2F319002BBCEE /* FamilyWheelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FamilyWheelTests.m; sourceTree = "<group>"; };
 		A5EB48B51AD32388002BBCEE /* Blur.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Blur.fsh; sourceTree = "<group>"; };
@@ -88,7 +76,6 @@
 		C61E463A1AD7E01D00CF4C70 /* Bariol_Thin_Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bariol_Thin_Italic.otf; sourceTree = "<group>"; };
 		C61E463B1AD7E01D00CF4C70 /* Bariol_Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bariol_Thin.otf; sourceTree = "<group>"; };
 		C61E46451AD8289D00CF4C70 /* MemoriaScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoriaScene.h; sourceTree = "<group>"; };
-		C61E46461AD8289D00CF4C70 /* MemoriaScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoriaScene.m; sourceTree = "<group>"; };
 		C61E46471AD8289D00CF4C70 /* MemoriaScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MemoriaScene.sks; sourceTree = "<group>"; };
 		C61E46481AD8289D00CF4C70 /* som_cachorro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = som_cachorro.mp3; sourceTree = "<group>"; };
 		C61E46491AD8289D00CF4C70 /* som_coruja.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = som_coruja.mp3; sourceTree = "<group>"; };
@@ -102,21 +89,15 @@
 		C61E46511AD8289D00CF4C70 /* som_pinto.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = som_pinto.mp3; sourceTree = "<group>"; };
 		C61E46521AD8289D00CF4C70 /* som_porco.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = som_porco.mp3; sourceTree = "<group>"; };
 		C61E46531AD8289D00CF4C70 /* som_vaca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = som_vaca.mp3; sourceTree = "<group>"; };
-		C61E46621AD828AC00CF4C70 /* Memoria.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Memoria.xcassets; sourceTree = "<group>"; };
 		C61E46641AD828DD00CF4C70 /* Animal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
 		C61E46651AD828DD00CF4C70 /* Animal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
 		EEE2BCBC1AD840110023CF41 /* Bariol_Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bariol_Regular.otf; sourceTree = "<group>"; };
+		EEEDDB041AE0286B0051A273 /* MemoriaScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoriaScene.m; sourceTree = "<group>"; };
+		EEEDDB081AE03A730051A273 /* Memoria.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Memoria.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A5EB48841AD2F318002BBCEE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A5EB48A21AD2F319002BBCEE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -139,7 +120,6 @@
 			isa = PBXGroup;
 			children = (
 				A5EB48871AD2F318002BBCEE /* Rodina.app */,
-				A5EB48A51AD2F319002BBCEE /* RodinaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -216,10 +196,10 @@
 			children = (
 				C61E46641AD828DD00CF4C70 /* Animal.h */,
 				C61E46651AD828DD00CF4C70 /* Animal.m */,
-				C61E46621AD828AC00CF4C70 /* Memoria.xcassets */,
 				C61E46451AD8289D00CF4C70 /* MemoriaScene.h */,
-				C61E46461AD8289D00CF4C70 /* MemoriaScene.m */,
+				EEEDDB041AE0286B0051A273 /* MemoriaScene.m */,
 				C61E46471AD8289D00CF4C70 /* MemoriaScene.sks */,
+				EEEDDB081AE03A730051A273 /* Memoria.xcassets */,
 				C61E46481AD8289D00CF4C70 /* som_cachorro.mp3 */,
 				C61E46491AD8289D00CF4C70 /* som_coruja.mp3 */,
 				C61E464A1AD8289D00CF4C70 /* som_elefante.mp3 */,
@@ -256,24 +236,6 @@
 			productReference = A5EB48871AD2F318002BBCEE /* Rodina.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A5EB48A41AD2F319002BBCEE /* RodinaTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A5EB48B21AD2F319002BBCEE /* Build configuration list for PBXNativeTarget "RodinaTests" */;
-			buildPhases = (
-				A5EB48A11AD2F319002BBCEE /* Sources */,
-				A5EB48A21AD2F319002BBCEE /* Frameworks */,
-				A5EB48A31AD2F319002BBCEE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A5EB48A71AD2F319002BBCEE /* PBXTargetDependency */,
-			);
-			name = RodinaTests;
-			productName = FamilyWheelTests;
-			productReference = A5EB48A51AD2F319002BBCEE /* RodinaTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -285,11 +247,6 @@
 				TargetAttributes = {
 					A5EB48861AD2F318002BBCEE = {
 						CreatedOnToolsVersion = 6.2;
-					};
-					A5EB48A41AD2F319002BBCEE = {
-						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = ZJ6DEZHYRU;
-						TestTargetID = A5EB48861AD2F318002BBCEE;
 					};
 				};
 			};
@@ -307,7 +264,6 @@
 			projectRoot = "";
 			targets = (
 				A5EB48861AD2F318002BBCEE /* Rodina */,
-				A5EB48A41AD2F319002BBCEE /* RodinaTests */,
 			);
 		};
 /* End PBXProject section */
@@ -323,7 +279,6 @@
 				A5E661A11AD5A0A30068392C /* click.wav in Resources */,
 				A5EB489D1AD2F318002BBCEE /* Images.xcassets in Resources */,
 				C61E46401AD7E26A00CF4C70 /* Bariol_Light.otf in Resources */,
-				C61E46631AD828AC00CF4C70 /* Memoria.xcassets in Resources */,
 				C61E46581AD8289D00CF4C70 /* som_elefante.mp3 in Resources */,
 				C61E465C1AD8289D00CF4C70 /* som_macaco.mp3 in Resources */,
 				C61E463F1AD7E26A00CF4C70 /* Bariol_Light_Italic.otf in Resources */,
@@ -338,6 +293,7 @@
 				C61E465B1AD8289D00CF4C70 /* som_leoa.mp3 in Resources */,
 				C61E46341AD7DEC300CF4C70 /* Roleta-02.png in Resources */,
 				C61E465A1AD8289D00CF4C70 /* som_gato.mp3 in Resources */,
+				EEEDDB091AE03A730051A273 /* Memoria.xcassets in Resources */,
 				C61E46611AD8289D00CF4C70 /* som_vaca.mp3 in Resources */,
 				C61E46431AD7E26A00CF4C70 /* Bariol_Thin.otf in Resources */,
 				C61E46571AD8289D00CF4C70 /* som_coruja.mp3 in Resources */,
@@ -350,13 +306,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A5EB48A31AD2F319002BBCEE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -364,33 +313,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEEDDB051AE0286B0051A273 /* MemoriaScene.m in Sources */,
 				A5EB48981AD2F318002BBCEE /* GameViewController.m in Sources */,
 				A5EB48901AD2F318002BBCEE /* AppDelegate.m in Sources */,
 				A5E661A41AD5A9750068392C /* ChildrenGame.m in Sources */,
-				C61E46541AD8289D00CF4C70 /* MemoriaScene.m in Sources */,
 				C61E46661AD828DD00CF4C70 /* Animal.m in Sources */,
 				A5EB48931AD2F318002BBCEE /* GameScene.m in Sources */,
 				A5EB488D1AD2F318002BBCEE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A5EB48A11AD2F319002BBCEE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A5EB48AC1AD2F319002BBCEE /* FamilyWheelTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A5EB48A71AD2F319002BBCEE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A5EB48861AD2F318002BBCEE /* Rodina */;
-			targetProxy = A5EB48A61AD2F319002BBCEE /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A5EB48991AD2F318002BBCEE /* Main.storyboard */ = {
@@ -516,40 +449,6 @@
 			};
 			name = Release;
 		};
-		A5EB48B31AD2F319002BBCEE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = FamilyWheelTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = RodinaTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rodina.app/Rodina";
-			};
-			name = Debug;
-		};
-		A5EB48B41AD2F319002BBCEE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = FamilyWheelTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = RodinaTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rodina.app/Rodina";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -567,15 +466,6 @@
 			buildConfigurations = (
 				A5EB48B01AD2F319002BBCEE /* Debug */,
 				A5EB48B11AD2F319002BBCEE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A5EB48B21AD2F319002BBCEE /* Build configuration list for PBXNativeTarget "RodinaTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A5EB48B31AD2F319002BBCEE /* Debug */,
-				A5EB48B41AD2F319002BBCEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
