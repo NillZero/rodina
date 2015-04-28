@@ -1,6 +1,6 @@
 #import "MemoriaScene.h"
 #import "Animal.h"
-#import "GameScene.h"
+#import "GameSelection.h"
 
 @interface MemoriaScene ()
 
@@ -86,7 +86,7 @@ Animal *secondAnimal;
         if (touchedNode.name != nil && !touchedNode.hidden) {
             if ([touchedNode.name isEqualToString:@"Voltar"]) {
                 [Animal randomizeAnimalsOrder];
-                GameScene *scene = [GameScene unarchiveFromFile:@"GameScene"];
+                GameSelection *scene = [GameSelection unarchiveFromFile:@"GameSelection"];
                 scene.scaleMode = SKSceneScaleModeAspectFit;
                 
                 // Present the scene.

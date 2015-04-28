@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5B937BF1AEACDB1007BFD90 /* SoonScene.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B937BD1AEACDB1007BFD90 /* SoonScene.m */; };
+		A5B937C01AEACDB1007BFD90 /* SoonScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A5B937BE1AEACDB1007BFD90 /* SoonScene.sks */; };
+		A5D0F62C1AEAB07600A3D26F /* GameSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D0F62A1AEAB07600A3D26F /* GameSelection.m */; };
+		A5D0F62D1AEAB07600A3D26F /* GameSelection.sks in Resources */ = {isa = PBXBuildFile; fileRef = A5D0F62B1AEAB07600A3D26F /* GameSelection.sks */; };
 		A5E6619F1AD59A160068392C /* tick.aiff in Resources */ = {isa = PBXBuildFile; fileRef = A5E6619E1AD59A160068392C /* tick.aiff */; };
 		A5E661A11AD5A0A30068392C /* click.wav in Resources */ = {isa = PBXBuildFile; fileRef = A5E661A01AD5A0A30068392C /* click.wav */; };
 		A5E661A41AD5A9750068392C /* ChildrenGame.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E661A31AD5A9750068392C /* ChildrenGame.m */; };
@@ -19,7 +23,6 @@
 		A5EB489D1AD2F318002BBCEE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5EB489C1AD2F318002BBCEE /* Images.xcassets */; };
 		A5EB48A01AD2F318002BBCEE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5EB489E1AD2F318002BBCEE /* LaunchScreen.xib */; };
 		A5EB48B61AD32388002BBCEE /* Blur.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A5EB48B51AD32388002BBCEE /* Blur.fsh */; };
-		C61E46341AD7DEC300CF4C70 /* Roleta-02.png in Resources */ = {isa = PBXBuildFile; fileRef = C61E46331AD7DEC300CF4C70 /* Roleta-02.png */; };
 		C61E463D1AD7E26A00CF4C70 /* Bariol_Bold_Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C61E46351AD7E01D00CF4C70 /* Bariol_Bold_Italic.otf */; };
 		C61E463E1AD7E26A00CF4C70 /* Bariol_Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C61E46361AD7E01D00CF4C70 /* Bariol_Bold.otf */; };
 		C61E463F1AD7E26A00CF4C70 /* Bariol_Light_Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C61E46371AD7E01D00CF4C70 /* Bariol_Light_Italic.otf */; };
@@ -47,6 +50,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A5B937BC1AEACDB1007BFD90 /* SoonScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoonScene.h; sourceTree = "<group>"; };
+		A5B937BD1AEACDB1007BFD90 /* SoonScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoonScene.m; sourceTree = "<group>"; };
+		A5B937BE1AEACDB1007BFD90 /* SoonScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SoonScene.sks; sourceTree = "<group>"; };
+		A5D0F6291AEAB07600A3D26F /* GameSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameSelection.h; path = ../GameSelection.h; sourceTree = "<group>"; };
+		A5D0F62A1AEAB07600A3D26F /* GameSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameSelection.m; path = ../GameSelection.m; sourceTree = "<group>"; };
+		A5D0F62B1AEAB07600A3D26F /* GameSelection.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = GameSelection.sks; path = ../GameSelection.sks; sourceTree = "<group>"; };
 		A5E6619E1AD59A160068392C /* tick.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = tick.aiff; sourceTree = "<group>"; };
 		A5E661A01AD5A0A30068392C /* click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = click.wav; sourceTree = "<group>"; };
 		A5E661A21AD5A9750068392C /* ChildrenGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildrenGame.h; sourceTree = "<group>"; };
@@ -67,7 +76,6 @@
 		A5EB48AA1AD2F319002BBCEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5EB48AB1AD2F319002BBCEE /* FamilyWheelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FamilyWheelTests.m; sourceTree = "<group>"; };
 		A5EB48B51AD32388002BBCEE /* Blur.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Blur.fsh; sourceTree = "<group>"; };
-		C61E46331AD7DEC300CF4C70 /* Roleta-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Roleta-02.png"; sourceTree = "<group>"; };
 		C61E46351AD7E01D00CF4C70 /* Bariol_Bold_Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bariol_Bold_Italic.otf; sourceTree = "<group>"; };
 		C61E46361AD7E01D00CF4C70 /* Bariol_Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bariol_Bold.otf; sourceTree = "<group>"; };
 		C61E46371AD7E01D00CF4C70 /* Bariol_Light_Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bariol_Light_Italic.otf; sourceTree = "<group>"; };
@@ -132,12 +140,14 @@
 				A5EB48911AD2F318002BBCEE /* GameScene.h */,
 				A5EB48921AD2F318002BBCEE /* GameScene.m */,
 				A5EB48941AD2F318002BBCEE /* GameScene.sks */,
+				A5D0F6291AEAB07600A3D26F /* GameSelection.h */,
+				A5D0F62A1AEAB07600A3D26F /* GameSelection.m */,
+				A5D0F62B1AEAB07600A3D26F /* GameSelection.sks */,
 				A5EB48961AD2F318002BBCEE /* GameViewController.h */,
 				A5EB48971AD2F318002BBCEE /* GameViewController.m */,
 				A5E661A21AD5A9750068392C /* ChildrenGame.h */,
 				A5E661A31AD5A9750068392C /* ChildrenGame.m */,
 				A5EB48991AD2F318002BBCEE /* Main.storyboard */,
-				C61E46331AD7DEC300CF4C70 /* Roleta-02.png */,
 				A5EB489C1AD2F318002BBCEE /* Images.xcassets */,
 				A5EB489E1AD2F318002BBCEE /* LaunchScreen.xib */,
 				A5EB48B51AD32388002BBCEE /* Blur.fsh */,
@@ -196,8 +206,8 @@
 			children = (
 				C61E46641AD828DD00CF4C70 /* Animal.h */,
 				C61E46651AD828DD00CF4C70 /* Animal.m */,
-				C61E46451AD8289D00CF4C70 /* MemoriaScene.h */,
 				EEEDDB041AE0286B0051A273 /* MemoriaScene.m */,
+				C61E46451AD8289D00CF4C70 /* MemoriaScene.h */,
 				C61E46471AD8289D00CF4C70 /* MemoriaScene.sks */,
 				EEEDDB081AE03A730051A273 /* Memoria.xcassets */,
 				C61E46481AD8289D00CF4C70 /* som_cachorro.mp3 */,
@@ -212,6 +222,9 @@
 				C61E46511AD8289D00CF4C70 /* som_pinto.mp3 */,
 				C61E46521AD8289D00CF4C70 /* som_porco.mp3 */,
 				C61E46531AD8289D00CF4C70 /* som_vaca.mp3 */,
+				A5B937BC1AEACDB1007BFD90 /* SoonScene.h */,
+				A5B937BD1AEACDB1007BFD90 /* SoonScene.m */,
+				A5B937BE1AEACDB1007BFD90 /* SoonScene.sks */,
 			);
 			name = Games;
 			sourceTree = "<group>";
@@ -286,12 +299,13 @@
 				A5EB48951AD2F318002BBCEE /* GameScene.sks in Resources */,
 				C61E465E1AD8289D00CF4C70 /* som_pato.mp3 in Resources */,
 				C61E465F1AD8289D00CF4C70 /* som_pinto.mp3 in Resources */,
+				A5B937C01AEACDB1007BFD90 /* SoonScene.sks in Resources */,
 				C61E46601AD8289D00CF4C70 /* som_porco.mp3 in Resources */,
 				C61E46551AD8289D00CF4C70 /* MemoriaScene.sks in Resources */,
 				C61E463D1AD7E26A00CF4C70 /* Bariol_Bold_Italic.otf in Resources */,
+				A5D0F62D1AEAB07600A3D26F /* GameSelection.sks in Resources */,
 				A5EB489B1AD2F318002BBCEE /* Main.storyboard in Resources */,
 				C61E465B1AD8289D00CF4C70 /* som_leoa.mp3 in Resources */,
-				C61E46341AD7DEC300CF4C70 /* Roleta-02.png in Resources */,
 				C61E465A1AD8289D00CF4C70 /* som_gato.mp3 in Resources */,
 				EEEDDB091AE03A730051A273 /* Memoria.xcassets in Resources */,
 				C61E46611AD8289D00CF4C70 /* som_vaca.mp3 in Resources */,
@@ -313,8 +327,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5B937BF1AEACDB1007BFD90 /* SoonScene.m in Sources */,
 				EEEDDB051AE0286B0051A273 /* MemoriaScene.m in Sources */,
 				A5EB48981AD2F318002BBCEE /* GameViewController.m in Sources */,
+				A5D0F62C1AEAB07600A3D26F /* GameSelection.m in Sources */,
 				A5EB48901AD2F318002BBCEE /* AppDelegate.m in Sources */,
 				A5E661A41AD5A9750068392C /* ChildrenGame.m in Sources */,
 				C61E46661AD828DD00CF4C70 /* Animal.m in Sources */,
@@ -429,7 +445,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FamilyWheel/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = Rodina;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -442,7 +458,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FamilyWheel/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = Rodina;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -8,7 +8,7 @@
 
 #import "GameScene.h"
 #import "ChildrenGame.h"
-#import "MemoriaScene.h"
+#import "GameSelection.h"
 
 BOOL hasTouched = false;
 
@@ -165,8 +165,7 @@ SKNode *popup;
                     [self restartScene];
                 }
                 if ([touchedNode.name isEqualToString:@"Game"]) {
-                    
-                    MemoriaScene *scene = [MemoriaScene unarchiveFromFile:@"MemoriaScene"];
+                    GameSelection *scene = [GameSelection unarchiveFromFile:@"GameSelection"];
                     scene.scaleMode = SKSceneScaleModeAspectFit;
                     
                     // Present the scene.
